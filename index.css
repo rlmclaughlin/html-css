@@ -1,6 +1,16 @@
+html{
+    height: 100%; 
+}
+
 body{
-    width: 90%; 
+    width: 85%; 
     margin: 0 auto; 
+    height: 100%; 
+}
+
+a{
+    text-decoration: none; 
+    color: black;
 }
 
 /*-----------------Navbar---------------------*/
@@ -8,21 +18,22 @@ nav{
     display: flex; 
     flex-wrap: wrap; 
     justify-content: space-between; 
-    padding: 40px 25px; 
+    align-items: center; 
+    padding: 40px 0px 20px 0px; 
 
+}
+
+.logo-container{
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center;
 }
 
 .menu-items{
     display: flex; 
     flex-wrap: wrap; 
     justify-content: space-between; 
-    width: 25%; 
-}
-
-.main-container{
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-around;
+    width: 35%; 
 }
 
 .menu-bar-image{
@@ -32,12 +43,60 @@ nav{
 
 /*------------index main section----------------------*/
 
+.main-container{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    height: 60%; 
+}
+
 .card{
     display: flex; 
     flex-wrap: wrap; 
     justify-content: center; 
     align-items: center; 
-    width: 30%; 
-    background: lightgray;
-    margin-top: 45px; 
+    width: 32%; 
+    position: relative; 
+    height: 100%;
+}
+
+.card img{
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+}
+.card h3{
+    position: absolute; 
+    bottom: 0px;
+    top: 0px;
+    bottom: 0px; 
+    height: 100%; 
+    width: 100%; 
+    opacity: 0; 
+
+}
+
+.card h3:hover{
+    background: rgba(43, 26, 26, 0.7); 
+    width: 100%; 
+    color: white; 
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100%;
+    margin-top: 0px; 
+    margin-bottom: 0px;  
+    opacity: 1;  
+}
+
+/*-------------------footer----------------*/
+
+footer{
+    position: absolute; 
+    bottom: 0px; 
+    padding: 5px 0px;
+    text-align: center; 
+    width: 85%;
+    
 }
