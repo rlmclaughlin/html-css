@@ -1,17 +1,43 @@
+body{
+    width: 90%; 
+    margin: 0 auto; 
+}
+
+/*-----------------Navbar---------------------*/
 nav{
     display: flex; 
     flex-wrap: wrap; 
-    justify-content: space-around; 
+    justify-content: space-between; 
+    padding: 40px 25px; 
+
 }
 
 .menu-items{
     display: flex; 
     flex-wrap: wrap; 
     justify-content: space-between; 
+    width: 25%; 
 }
 
 .main-container{
     display: flex; 
     flex-wrap: wrap; 
-    justify-content: space-around; 
+    justify-content: space-around;
+}
+
+.menu-bar-image{
+    height: 50px;
+}
+
+
+/*------------index main section----------------------*/
+
+.card{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    width: 30%; 
+    background: lightgray;
+    margin-top: 45px; 
 }
