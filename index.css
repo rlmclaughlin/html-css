@@ -52,9 +52,28 @@ nav section a h1{
     font-size: 20px; 
 }
 
+@media(max-width:810px){
+    nav section h1{
+        display: none;
+    }
+}
+
 .menu-bar-image{
     height: 50px;
 }
+
+.nav-logo{
+    display: none; 
+}
+
+@media(max-width:810px){
+    .nav-logo{
+        display: block; 
+        width: 100%; 
+        text-align: center; 
+    }
+}
+
 
 
 /*------------header/banner section----------------------*/
@@ -73,8 +92,12 @@ header{
     background-size: cover; 
     background-position: center; 
     box-shadow:         1px 1px 3px 4px #ccc;    
+}
 
-
+@media(max-width:800px){
+    header{
+        width: 95%;
+    }
 }
 
 header section{
@@ -89,9 +112,36 @@ header section{
     font-size: 36px; 
 }
 
+@media(max-width:810px){
+    header section {
+        flex-direction: column; 
+    }
+}
+
+
+@media(max-width:810px){
+    header section h1{
+        font-size: 35px;
+    }
+}
+
+@media(max-width:620px){
+    header section h1{
+        font-size: 30px;
+    }
+}
+
 .horizontal-rule{
     width: 5%; 
     text-align: center; 
+}
+
+@media(max-width:810px){
+    hr{
+        height: 1px; 
+        width: 5%;
+        border-color: white;
+    }
 }
 
 /*---------------------------------------------------*/
@@ -169,13 +219,40 @@ footer section{
     width: 33%;
     margin-left: 5px; 
 }
+
+@media(max-width: 800px){
+    footer section{
+        width: 50%;
+    }
+}
+
+@media(max-width: 600px){
+    footer section{
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
 footer img{
     width: 43px; 
     height: 43px; 
 }
 
+@media(max-width: 800px){
+    footer img{
+        width: 33px; 
+        height: 33px;
+    }
+}
+
 .icon-2{
     height: 58px; 
+}
+
+@media(max-width: 800px){
+    .icon-2{
+        height: 48px; 
+    }
 }
 
 .icon-3{
@@ -183,15 +260,33 @@ footer img{
     width: 30px; 
 }
 
+@media(max-width: 800px){
+    .icon-3{
+        height: 20px;
+        width: 20px; 
+    }
+}
+
 .icon-4{
     height: 31px; 
     width: 32px; 
     margin-left: 5px; 
+    padding-right: 5px;
     margin-bottom: 2px; 
 }
 
+@media(max-width: 800px){
+    .icon-4{
+        height: 21px;
+        width: 22px; 
+    }
+}
 
-
+@media(max-width: 600px){
+    footer h3{
+        display: none; 
+    }
+}
 
 .bio-banner{
     display: flex; 
@@ -248,6 +343,7 @@ main{
 
 main h2{
     font-size: 33px;  
+    margin-top: 0px; 
 }
 
 main section p{
@@ -263,7 +359,7 @@ main section p{
     
     float: right;
     box-shadow: 1px 1px 3px 4px #454851;    
-    margin:10px 0px 13px 45px;
+    margin:10px 0px 23px 45px;
     opacity: 0.9;
     
 }
