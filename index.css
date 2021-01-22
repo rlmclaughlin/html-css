@@ -154,9 +154,15 @@ header section{
     display: flex; 
     flex-wrap: wrap; 
     justify-content: space-between;
-    width: 80%;
-    height: 85%;
+    width: 75%;
+    height: 65%;
     margin: 20px auto; 
+}
+
+@media(max-width: 900px){
+    .gallery-container{
+        width: 85%;
+    }
 }
 
 .gallery-card{
@@ -171,15 +177,59 @@ header section{
     box-shadow: 1px 1px 3px 4px #ccc;    
 }
 
+@media(max-width: 1125px){
+    .gallery-card{
+        width: 22%;
+        max-height: 170px;
+    }
+}
+
+@media(max-width: 1000px){
+    .gallery-card{
+        width: 30%;
+        max-height: 170px;
+    }
+}
+
+@media(max-width: 815px){
+    .gallery-card{
+        width: 30%;
+        max-height: 140px;
+    }
+}
+
+@media(max-width: 700px){
+    .gallery-card{
+        width: 45%;
+        height: 35%;
+        max-height: 300px;
+        margin: 15px 0;
+    }
+}
+
+@media(max-width: 600px){
+    .gallery-card{
+        height: 30%;
+        margin: 15px 0;
+    }
+}
+
+@media(max-width: 490px){
+    .gallery-card{
+        height: 21%;
+        margin: 15px 0;
+    }
+}
+
+
 .gallery-card img{
     position: absolute; 
     width: 100%; 
-    height: 100%; 
+    height: auto; 
 }
 
 .gallery-card h3{
     position: absolute; 
-    bottom: 0px;
     top: 0px;
     bottom: 0px; 
     height: 100%; 
@@ -302,11 +352,23 @@ footer img{
     background-size: cover; 
     background-position: top; 
     font-family: 'EB Garamond', serif;
-
-    
-
 }
 
+@media(max-width: 900px){
+    .bio-banner{
+        width: 95%;
+    }
+}
+
+
+
+@media(max-width:810px){
+    .banner-hr {
+        height: 55px; 
+        width: 0px;
+        border: 1px solid white;
+    }
+}
 .bio-banner section{
     height: 100%;
     width: 100%; 
@@ -318,6 +380,31 @@ footer img{
     align-items: center; 
     font-size: 36px; 
 }
+
+@media(max-width:810px){
+    .bio-banner section {
+        flex-direction: row; 
+    }
+}
+
+@media(max-width:830px){
+    header.bio-banner section h1{
+        font-size: 54px; 
+    }
+}
+
+@media(max-width:730px){
+    header.bio-banner section h1{
+        font-size: 36px; 
+    }
+}
+
+@media(max-width:420px){
+    header.bio-banner section h1{
+        font-size: 29px; 
+    }
+}
+
 
 .horizontal-rule{
     width: 5%; 
@@ -338,7 +425,20 @@ main{
  background: #ebebeb;
  color: #36383b;
  box-shadow: 1px 2px 3px 4px rgb(223, 223, 223);
- 
+}
+
+@media(max-width: 900px){
+    main{
+        width: 85%;
+    }
+}
+
+@media(max-width: 730px){
+    main section{
+        display: flex; 
+        flex-wrap: wrap; 
+        align-items: center;
+    }
 }
 
 main h2{
@@ -364,6 +464,13 @@ main section p{
     
 }
 
+@media(max-width: 730px){
+    .record-image{
+        max-width: 500px;
+        margin: 0 auto 15px auto; 
+    }
+}
+
 .record-image2{
     width: 100%;
     max-width: 320px;
@@ -373,6 +480,12 @@ main section p{
     box-shadow: 1px 1px 3px 4px #454851;    
     margin: 10px 45px 10px 0px;
     opacity: 0.9;
+}
+
+@media(max-width: 730px){
+    .record-image2{
+        margin: 30px auto; 
+    }
 }
 
 
