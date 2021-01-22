@@ -148,7 +148,6 @@ header section{
     height: 100%;
     margin-top: 0px; 
     margin-bottom: 0px;  
-    border-radius: 15px;
     opacity: 1;  
 }
 
@@ -237,14 +236,18 @@ footer img{
 /*-------------------bio page-----------------------------*/
 
 main{
- width: 70%; 
+ width: 75%; 
  margin: 15px auto; 
+ padding: 2% 5%;
+ border-radius: 15px; 
+ background: #ebebeb;
+ color: #36383b;
+ box-shadow: 1px 2px 3px 4px rgb(223, 223, 223);
  
 }
 
 main h2{
-    font-size: 36px; 
-    text-align: center; 
+    font-size: 33px;  
 }
 
 main section p{
@@ -255,12 +258,12 @@ main section p{
 
 .record-image{
     width: 100%;
-    max-width: 290px;
-    height: 100%; 
-    max-height: 360px;
+    max-width: 320px;
+    height: auto; 
+    
     float: right;
-    box-shadow: 1px 1px 3px 4px #ccc;    
-    margin:10px 0px 10px 25px;
+    box-shadow: 1px 1px 3px 4px #454851;    
+    margin:10px 0px 13px 45px;
     opacity: 0.9;
     
 }
@@ -271,8 +274,8 @@ main section p{
     height: 100%; 
     max-height: 320px;
     float: left;
-    box-shadow: 1px 1px 3px 4px #ccc;    
-    margin: 10px 25px 10px 0px;
+    box-shadow: 1px 1px 3px 4px #454851;    
+    margin: 10px 45px 10px 0px;
     opacity: 0.9;
 }
 
@@ -281,33 +284,52 @@ main section p{
 
 /*----------------contact me------------------------------*/
 .contact-container{
-    width: 85%; 
+    width: 75%; 
+    height:44%;
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-around;
+    color: #36383b;
+
 
 }
 
 form{
-    width: 45%; 
+    width: 40%; 
     text-align: center;
     padding: 15px 0px; 
-    box-shadow: 1px 1px 3px 4px #ccc;    
+    box-shadow: 1px 1px 3px 4px #ccc;
+}
 
+form h3{
+    margin-top: 0px;
+    text-decoration: underline;
+}
+
+.form-name{
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.form-name input{
+    width: 44%; 
 }
 
 input{
     width: 75%; 
-    margin-bottom: 20px; 
-    font-size: 16px; 
+    margin-bottom: 15px; 
+    font-size: 13px; 
     border-top: none;
     border-right: none;
     border-left: none; 
     border-bottom-color: #ccc;
+    background: #ebebeb
 }
 
 input::placeholder{
-    color: black;
     margin: 0 auto; 
 }
 
@@ -315,6 +337,7 @@ textarea{
     width: 75%; 
     height: 35%;
     border-color: #ccc;
+    background: #ebebeb;
 }
 
 textarea:focus, input:focus{
@@ -338,9 +361,11 @@ form h2{
 }
 
 form button{
-    width: 25%; 
+    width: 78%; 
     background: transparent; 
     border-radius: 5px; 
     height: 25px; 
     border: 2px solid #ccc;
+    font-weight:bold;
+    color: #36383b;
 }
