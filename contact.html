@@ -3,40 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">   
+    <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <title>Contact</title>
+    <title>Biography</title>
 </head>
 <body>
     <nav>
         <section>
-            <div class='logo-container'>
-                <a href="index.html">
-                    <img class='menu-bar-image' src='./menu-bar.png'/>
-                </a>
-                <h2>Ryan McLaughlin</h2>
-            </div>
-        </section>
-        <section class="menu-items">        
             <a href="bio.html">About Me</a>
-            <a href="gallery.html">Gallery</a>
+            <a href="gallery.html">Gallery</a>                    
+            <h1>Ryan McLaughlin</h1>
             <a href="contact.html">Contact</a>
+            <a href="contact.html">Links</a>           
         </section>
-        <hr style='width: 100%'>
     </nav>
-    <main class=""> 
-        <h2>Contact Me</h2>
+    <header class='bio-banner'> 
+        <section>
+            <h1>Contact Me</h1>  
+            <hr>
+            <h1>2021</h1>      
+        </section>
+    </header>
+    <main class="contact-container"> 
+        
+        <img class='contact-image' src='./assets/park.jpg' /> 
         <form>
             <section>
-                First Name: <input />  
+                <input placeholder="First Name"/>  
+            </section>
+            <section> 
+                <input placeholder="Last Name"/>                
             </section>
             <section>
-                Last Name: <input />                
+                <input placeholder="Email"/> 
             </section>
-            <input /> 
-            <textarea /> 
+                <textarea placeholder="Message Here"></textarea>
+                <br>
             <button>Submit</button>
         </form>
     </main>

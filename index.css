@@ -275,3 +275,72 @@ main section p{
     margin: 10px 25px 10px 0px;
     opacity: 0.9;
 }
+
+
+
+
+/*----------------contact me------------------------------*/
+.contact-container{
+    width: 85%; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+
+}
+
+form{
+    width: 45%; 
+    text-align: center;
+    padding: 15px 0px; 
+    box-shadow: 1px 1px 3px 4px #ccc;    
+
+}
+
+input{
+    width: 75%; 
+    margin-bottom: 20px; 
+    font-size: 16px; 
+    border-top: none;
+    border-right: none;
+    border-left: none; 
+    border-bottom-color: #ccc;
+}
+
+input::placeholder{
+    color: black;
+    margin: 0 auto; 
+}
+
+textarea{
+    width: 75%; 
+    height: 35%;
+    border-color: #ccc;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+textarea::placeholder{
+    text-align: center; 
+}
+
+.contact-image{
+    height: 100%;  
+    width: 45%; 
+    box-shadow: 1px 1px 3px 4px #ccc;    
+
+}
+
+form h2{
+    font-size: 34px; 
+    
+}
+
+form button{
+    width: 25%; 
+    background: transparent; 
+    border-radius: 5px; 
+    height: 25px; 
+    border: 2px solid #ccc;
+}
