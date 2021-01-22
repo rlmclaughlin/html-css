@@ -1,11 +1,14 @@
 html{
     height: 100%; 
+    font-family: 'EB Garamond', serif;
 }
 
 body{
-    width: 85%; 
+    height: 100%;
+    width: 95%; 
     margin: 0 auto; 
-    height: 100%; 
+    font-family: 'EB Garamond', serif;
+
 }
 
 a{
@@ -13,27 +16,40 @@ a{
     color: black;
 }
 
+hr{
+    height: 60px;
+    margin: 0px 25px;
+    border: 1px solid white;
+}
+
 /*-----------------Navbar---------------------*/
 nav{
     display: flex; 
     flex-wrap: wrap; 
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 40px 0px 20px 0px; 
-
+    justify-content: center; 
+    padding: 10px 0px 0px 0px; 
 }
 
-.logo-container{
+nav section{
     display: flex; 
     flex-wrap: wrap; 
-    align-items: center;
+    justify-content: space-around; 
+    align-items: baseline; 
+    width: 65%; 
 }
 
-.menu-items{
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-between; 
-    width: 35%; 
+nav section a{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav section a:hover{
+    font-size: 18px; 
+    text-decoration: underline;
+}
+
+nav section a h1{
+    font-size: 20px; 
 }
 
 .menu-bar-image{
@@ -41,61 +57,56 @@ nav{
 }
 
 
-/*------------index main section----------------------*/
+/*------------header/banner section----------------------*/
 
-.main-container{
+header{
     display: flex; 
     flex-wrap: wrap; 
-    justify-content: space-between;
-    height: 60%; 
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    max-height: 500px;
+    width: 85%; 
+    margin: 0 auto; 
+    background-image: url('./assets/trail.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    box-shadow:         1px 1px 3px 4px #ccc;    
+
+
 }
 
-.card{
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-    align-items: center; 
-    width: 32%; 
-    position: relative; 
+header section{
     height: 100%;
-}
-
-.card img{
-    position: absolute; 
-    width: 100%; 
-    height: 100%; 
-}
-.card h3{
-    position: absolute; 
-    bottom: 0px;
-    top: 0px;
-    bottom: 0px; 
-    height: 100%; 
-    width: 100%; 
-    opacity: 0; 
-
-}
-
-.card h3:hover{
-    background: rgba(43, 26, 26, 0.7); 
     width: 100%; 
     color: white; 
+    background: rgba(0, 0, 0, 0.5); 
     display: flex; 
     flex-wrap: wrap; 
-    align-items: center; 
     justify-content: center; 
-    height: 100%;
-    margin-top: 0px; 
-    margin-bottom: 0px;  
-    opacity: 1;  
+    align-items: center; 
+    font-size: 36px; 
 }
+
+.horizontal-rule{
+    width: 5%; 
+    text-align: center; 
+}
+
+/*---------------------------------------------------*/
+
+
+
 
 /*-------------------gallery---------------*/
 .gallery-container{
     display: flex; 
     flex-wrap: wrap; 
     justify-content: space-between;
-    height: 60%; 
+    width: 80%;
+    height: 85%;
+    margin: 20px auto; 
 }
 
 .gallery-card{
@@ -103,10 +114,11 @@ nav{
     flex-wrap: wrap; 
     justify-content: space-between; 
     align-items: center; 
-    width: 20%; 
-    height: 60%; 
+    width: 24%; 
+    max-height: 220px; 
     position: relative; 
-    margin: 25px 25px; 
+    margin: 0px 0px;
+    box-shadow: 1px 1px 3px 4px #ccc;    
 }
 
 .gallery-card img{
@@ -128,7 +140,6 @@ nav{
 
 .gallery-card h3:hover{
     background: rgba(43, 26, 26, 0.7); 
-    width: 100%; 
     color: white; 
     display: flex; 
     flex-wrap: wrap; 
@@ -137,16 +148,130 @@ nav{
     height: 100%;
     margin-top: 0px; 
     margin-bottom: 0px;  
+    border-radius: 15px;
     opacity: 1;  
 }
 
 /*-------------------footer----------------*/
-
 footer{
-    position: absolute; 
-    bottom: 0px; 
-    padding: 5px 0px;
-    text-align: center; 
-    width: 85%;
+    display: flex; 
+    flex-wrap: wrap; 
+    width: 85%; 
+    margin: 0 auto; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+footer section{
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    justify-content: space-between; 
+    width: 33%;
+    margin-left: 5px; 
+}
+footer img{
+    width: 43px; 
+    height: 43px; 
+}
+
+.icon-2{
+    height: 58px; 
+}
+
+.icon-3{
+    height: 30px;
+    width: 30px; 
+}
+
+.icon-4{
+    height: 31px; 
+    width: 32px; 
+    margin-left: 5px; 
+    margin-bottom: 2px; 
+}
+
+
+
+
+.bio-banner{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    max-height: 180px;
+    width: 85%; 
+    margin: 0 auto; 
+    background-image: url('./assets/park.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: top; 
+    font-family: 'EB Garamond', serif;
+
     
+
+}
+
+.bio-banner section{
+    height: 100%;
+    width: 100%; 
+    color: white; 
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: 36px; 
+}
+
+.horizontal-rule{
+    width: 5%; 
+    text-align: center; 
+}
+
+
+
+
+
+/*-------------------bio page-----------------------------*/
+
+main{
+ width: 70%; 
+ margin: 15px auto; 
+ 
+}
+
+main h2{
+    font-size: 36px; 
+    text-align: center; 
+}
+
+main section p{
+    margin: 0px; 
+    font-size: 17px; 
+    font-weight: 600; 
+}
+
+.record-image{
+    width: 100%;
+    max-width: 290px;
+    height: 100%; 
+    max-height: 360px;
+    float: right;
+    box-shadow: 1px 1px 3px 4px #ccc;    
+    margin:10px 0px 10px 25px;
+    opacity: 0.9;
+    
+}
+
+.record-image2{
+    width: 100%;
+    max-width: 320px;
+    height: 100%; 
+    max-height: 320px;
+    float: left;
+    box-shadow: 1px 1px 3px 4px #ccc;    
+    margin: 10px 25px 10px 0px;
+    opacity: 0.9;
 }
