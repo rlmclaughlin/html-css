@@ -369,7 +369,7 @@ footer img{
     flex-wrap: wrap; 
     justify-content: center;
     align-items: center;
-    height: 100%; 
+    height: auto; 
     max-height: auto;
     width: 85%; 
     margin: 0 auto; 
@@ -508,7 +508,6 @@ main section p{
     width: 100%;
     max-width: 320px;
     height: auto; 
-    
     float: right;
     box-shadow: 1px 1px 3px 4px #454851;    
     margin:10px 0px 23px 45px;
@@ -653,6 +652,7 @@ textarea:focus, input:focus{
 
 textarea::placeholder{
     text-align: center; 
+    padding:15%;
 }
 
 .contact-image{
