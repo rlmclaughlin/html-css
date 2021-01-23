@@ -1,0 +1,623 @@
+html{
+    height: 100%; 
+    font-family: 'EB Garamond', serif;
+}
+
+body{
+    height: 100%;
+    width: 95%; 
+    max-width: 1100px;
+    margin: 0 auto; 
+    font-family: 'EB Garamond', serif;
+
+}
+
+a{
+    text-decoration: none; 
+    color: black;
+}
+
+hr{
+    height: 60px;
+    margin: 0px 25px;
+    border: 1px solid white;
+}
+
+/*-----------------Navbar---------------------*/
+nav{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    padding: 10px 0px 0px 0px; 
+}
+
+nav section{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    align-items: baseline; 
+    width: 65%; 
+}
+
+nav section a{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav section a:hover{
+    font-size: 18px; 
+    text-decoration: underline;
+}
+
+nav section a h1{
+    font-size: 20px; 
+}
+
+@media(max-width:810px){
+    nav section h1{
+        display: none;
+    }
+}
+
+.menu-bar-image{
+    height: 50px;
+}
+
+.nav-logo{
+    display: none; 
+}
+
+@media(max-width:810px){
+    .nav-logo{
+        display: block; 
+        width: 100%; 
+        text-align: center; 
+    }
+}
+
+
+
+/*------------header/banner section----------------------*/
+
+header{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    max-height: 500px;
+    width: 85%; 
+    margin: 0 auto; 
+    background-image: url('./assets/trail.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    box-shadow:         1px 1px 3px 4px #ccc;    
+}
+
+@media(max-width:800px){
+    header{
+        width: 95%;
+    }
+}
+
+header section{
+    height: 100%;
+    width: 100%; 
+    color: white; 
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: 36px; 
+}
+
+@media(max-width:810px){
+    header section {
+        flex-direction: column; 
+    }
+}
+
+
+@media(max-width:810px){
+    header section h1{
+        font-size: 35px;
+    }
+}
+
+@media(max-width:620px){
+    header section h1{
+        font-size: 30px;
+    }
+}
+
+.horizontal-rule{
+    width: 5%; 
+    text-align: center; 
+}
+
+@media(max-width:810px){
+    hr{
+        height: 1px; 
+        width: 5%;
+        border-color: white;
+    }
+}
+
+/*-------------------gallery----------------------------*/
+
+
+.gallery-container{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    width: 75%;
+    height: 75%;
+    margin: 20px auto; 
+}
+
+@media(max-width: 900px){
+    .gallery-container{
+        width: 85%;
+    }
+}
+
+.gallery-card{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 24%; 
+    max-height: 220px; 
+    position: relative; 
+    margin: 0px 0px;
+    box-shadow: 1px 1px 3px 4px #ccc;    
+}
+
+@media(max-width: 1125px){
+    .gallery-card{
+        width: 22%;
+        max-height: 170px;
+    }
+}
+
+@media(max-width: 1000px){
+    .gallery-card{
+        width: 30%;
+        max-height: 170px;;
+        margin-bottom: 30px
+    }
+}
+
+@media(max-width: 815px){
+    .gallery-card{
+        width: 30%;
+        max-height: 140px;
+    }
+}
+
+@media(max-width: 700px){
+    .gallery-card{
+        width: 45%;
+        height: 35%;
+        max-height: 300px;
+        margin: 15px 0;
+    }
+}
+
+@media(max-width: 600px){
+    .gallery-card{
+        height: 30%;
+        margin: 15px 0;
+    }
+}
+
+@media(max-width: 490px){
+    .gallery-card{
+        height: 21%;
+        margin: 15px 0;
+    }
+}
+
+.gallery-card img{
+    position: absolute; 
+    width: 100%; 
+    height: auto; 
+}
+
+.gallery-card h3{
+    position: absolute; 
+    top: 0px;
+    bottom: 0px; 
+    height: 100%; 
+    width: 100%; 
+    opacity: 0; 
+}
+
+.gallery-card h3:hover{
+    background: rgba(98, 101, 110, 0.3); 
+    color: white; 
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100%;
+    margin-top: 0px; 
+    margin-bottom: 0px;  
+    opacity: 1;  
+    box-shadow: 1px 1px 3px 4px rgb(160, 160, 160);    
+}
+
+
+/*-------------------footer----------------*/
+
+footer{
+    display: flex; 
+    flex-wrap: wrap; 
+    width: 85%; 
+    margin: 0 auto; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+footer section{
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    justify-content: space-between; 
+    width: 33%;
+    margin-left: 5px; 
+}
+
+@media(max-width: 800px){
+    footer section{
+        width: 50%;
+    }
+}
+
+@media(max-width: 600px){
+    footer section{
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+footer img{
+    width: 43px; 
+    height: 43px; 
+}
+
+@media(max-width: 800px){
+    footer img{
+        width: 33px; 
+        height: 33px;
+    }
+}
+
+.icon-2{
+    height: 58px; 
+}
+
+@media(max-width: 800px){
+    .icon-2{
+        height: 48px; 
+    }
+}
+
+.icon-3{
+    height: 30px;
+    width: 30px; 
+}
+
+@media(max-width: 800px){
+    .icon-3{
+        height: 20px;
+        width: 20px; 
+    }
+}
+
+.icon-4{
+    height: 31px; 
+    width: 32px; 
+    margin-left: 5px; 
+    padding-right: 5px;
+    margin-bottom: 2px; 
+}
+
+@media(max-width: 800px){
+    .icon-4{
+        height: 21px;
+        width: 22px; 
+    }
+}
+
+@media(max-width: 600px){
+    footer h3{
+        display: none; 
+    }
+}
+
+/*------------------------Banner----------------------*/
+
+.bio-banner{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    max-height: 180px;
+    width: 85%; 
+    margin: 0 auto; 
+    background-image: url('./assets/park.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: top; 
+    font-family: 'EB Garamond', serif;
+}
+
+@media(max-width: 900px){
+    .bio-banner{
+        width: 95%;
+    }
+}
+
+@media(max-width:810px){
+    .banner-hr {
+        height: 55px; 
+        width: 0px;
+        border: 1px solid white;
+    }
+}
+
+.bio-banner section{
+    height: 100%;
+    width: 100%; 
+    color: white; 
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: 36px; 
+}
+
+@media(max-width:810px){
+    .bio-banner section {
+        flex-direction: row; 
+    }
+}
+
+@media(max-width:830px){
+    header.bio-banner section h1{
+        font-size: 54px; 
+    }
+}
+
+@media(max-width:730px){
+    header.bio-banner section h1{
+        font-size: 36px; 
+    }
+}
+
+@media(max-width:420px){
+    header.bio-banner section h1{
+        font-size: 29px; 
+    }
+}
+
+main section article{
+    padding-top: 100px
+}
+
+@media(max-width:1090px){
+    main section article{
+        padding-top: 50px; 
+    }
+}
+
+@media(max-width:700px){
+    main section article {
+        padding-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/*-------------------bio page-----------------------------*/
+
+main{
+ width: 75%; 
+ margin: 15px auto; 
+ padding: 2% 5%;
+ border-radius: 15px; 
+ background: #ebebeb;
+ color: #36383b;
+ box-shadow: 1px 2px 3px 4px rgb(223, 223, 223);
+}
+
+@media(max-width: 900px){
+    main{
+        width: 85%;
+    }
+}
+
+@media(max-width: 730px){
+    main section{
+        display: flex; 
+        flex-wrap: wrap; 
+        align-items: center;
+    }
+}
+
+
+@media(max-width: 730px){
+    main section h2{
+        width: 85%;
+    }
+}
+
+main section p{
+    margin: 0px; 
+    font-size: 17px; 
+    font-weight: 600; 
+}
+
+.record-image{
+    width: 100%;
+    max-width: 320px;
+    height: auto; 
+    
+    float: right;
+    box-shadow: 1px 1px 3px 4px #454851;    
+    margin:10px 0px 23px 45px;
+    opacity: 0.9;
+    
+}
+
+@media(max-width: 730px){
+    .record-image{
+        max-width: 500px;
+        margin: 0 auto 15px auto; 
+    }
+}
+
+.record-image2{
+    width: 100%;
+    max-width: 320px;
+    height: 100%; 
+    max-height: 320px;
+    float: left;
+    box-shadow: 1px 1px 3px 4px #454851;    
+    margin: 10px 45px 10px 0px;
+    opacity: 0.9;
+}
+
+@media(max-width: 730px){
+    .record-image2{
+        max-width: 500px;
+        margin: 0 auto 15px auto; 
+        float: none;
+        height: auto;
+    }
+}
+
+
+
+
+
+/*----------------contact me------------------------------*/
+
+
+.contact-container{
+    width: 75%; 
+    height:44%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    color: #36383b;
+}
+
+@media(max-width: 900px){
+    .contact-container{
+        width: 85%;
+    }
+}
+
+@media(max-width: 750px){
+    .contact-container{
+        justify-content: center;
+    }
+}
+
+form{
+    width: 40%; 
+    text-align: center;
+    padding: 15px 0px; 
+    box-shadow: 1px 1px 3px 4px #ccc;
+}
+
+@media(max-width: 900px){
+    form{
+        width: 85%;
+    }
+}
+
+form h3{
+    margin-top: 0px;
+    text-decoration: underline;
+}
+
+.form-name{
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.form-name input{
+    width: 44%; 
+}
+
+input{
+    width: 75%; 
+    margin-bottom: 15px; 
+    font-size: 13px; 
+    border-top: none;
+    border-right: none;
+    border-left: none; 
+    border-bottom-color: #ccc;
+    background: #ebebeb
+}
+
+@media(max-width: 730px){
+    input.email{
+        margin: 0 auto 15px auto;
+    }
+}
+
+input::placeholder{
+    margin: 0 auto; 
+}
+
+textarea{
+    width: 75%; 
+    height: 35%;
+    border-color: #ccc;
+    background: #ebebeb;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+textarea::placeholder{
+    text-align: center; 
+}
+
+.contact-image{
+    height: 100%;  
+    width: 45%; 
+    box-shadow: 1px 1px 3px 4px #ccc;    
+}
+
+@media(max-width: 900px){
+    .contact-image{
+        display: none;
+    }
+}
+
+form h2{
+    font-size: 34px; 
+}
+
+form button{
+    width: 78%; 
+    background: transparent; 
+    border-radius: 5px; 
+    height: 25px; 
+    border: 2px solid #ccc;
+    font-weight:bold;
+    color: #36383b;
+}
