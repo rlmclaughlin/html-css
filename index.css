@@ -6,6 +6,7 @@ html{
 body{
     height: 100%;
     width: 95%; 
+    max-width: 1100px;
     margin: 0 auto; 
     font-family: 'EB Garamond', serif;
 
@@ -144,18 +145,15 @@ header section{
     }
 }
 
-/*---------------------------------------------------*/
+/*-------------------gallery----------------------------*/
 
 
-
-
-/*-------------------gallery---------------*/
 .gallery-container{
     display: flex; 
     flex-wrap: wrap; 
     justify-content: space-between;
     width: 75%;
-    height: 65%;
+    height: 75%;
     margin: 20px auto; 
 }
 
@@ -187,7 +185,8 @@ header section{
 @media(max-width: 1000px){
     .gallery-card{
         width: 30%;
-        max-height: 170px;
+        max-height: 170px;;
+        margin-bottom: 30px
     }
 }
 
@@ -221,7 +220,6 @@ header section{
     }
 }
 
-
 .gallery-card img{
     position: absolute; 
     width: 100%; 
@@ -235,11 +233,10 @@ header section{
     height: 100%; 
     width: 100%; 
     opacity: 0; 
-
 }
 
 .gallery-card h3:hover{
-    background: rgba(43, 26, 26, 0.7); 
+    background: rgba(98, 101, 110, 0.3); 
     color: white; 
     display: flex; 
     flex-wrap: wrap; 
@@ -249,9 +246,12 @@ header section{
     margin-top: 0px; 
     margin-bottom: 0px;  
     opacity: 1;  
+    box-shadow: 1px 1px 3px 4px rgb(160, 160, 160);    
 }
 
+
 /*-------------------footer----------------*/
+
 footer{
     display: flex; 
     flex-wrap: wrap; 
@@ -338,6 +338,8 @@ footer img{
     }
 }
 
+/*------------------------Banner----------------------*/
+
 .bio-banner{
     display: flex; 
     flex-wrap: wrap; 
@@ -360,8 +362,6 @@ footer img{
     }
 }
 
-
-
 @media(max-width:810px){
     .banner-hr {
         height: 55px; 
@@ -369,6 +369,7 @@ footer img{
         border: 1px solid white;
     }
 }
+
 .bio-banner section{
     height: 100%;
     width: 100%; 
@@ -405,15 +406,23 @@ footer img{
     }
 }
 
-
-.horizontal-rule{
-    width: 5%; 
-    text-align: center; 
+main section article{
+    padding-top: 100px
 }
 
+@media(max-width:1090px){
+    main section article{
+        padding-top: 50px; 
+    }
+}
 
-
-
+@media(max-width:700px){
+    main section article {
+        padding-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
 
 /*-------------------bio page-----------------------------*/
 
@@ -441,9 +450,11 @@ main{
     }
 }
 
-main h2{
-    font-size: 33px;  
-    margin-top: 0px; 
+
+@media(max-width: 730px){
+    main section h2{
+        width: 85%;
+    }
 }
 
 main section p{
@@ -484,14 +495,20 @@ main section p{
 
 @media(max-width: 730px){
     .record-image2{
-        margin: 30px auto; 
+        max-width: 500px;
+        margin: 0 auto 15px auto; 
+        float: none;
+        height: auto;
     }
 }
 
 
 
 
+
 /*----------------contact me------------------------------*/
+
+
 .contact-container{
     width: 75%; 
     height:44%;
@@ -499,8 +516,18 @@ main section p{
     flex-wrap: wrap; 
     justify-content: space-around;
     color: #36383b;
+}
 
+@media(max-width: 900px){
+    .contact-container{
+        width: 85%;
+    }
+}
 
+@media(max-width: 750px){
+    .contact-container{
+        justify-content: center;
+    }
 }
 
 form{
@@ -508,6 +535,12 @@ form{
     text-align: center;
     padding: 15px 0px; 
     box-shadow: 1px 1px 3px 4px #ccc;
+}
+
+@media(max-width: 900px){
+    form{
+        width: 85%;
+    }
 }
 
 form h3{
@@ -538,6 +571,12 @@ input{
     background: #ebebeb
 }
 
+@media(max-width: 730px){
+    input.email{
+        margin: 0 auto 15px auto;
+    }
+}
+
 input::placeholder{
     margin: 0 auto; 
 }
@@ -561,12 +600,16 @@ textarea::placeholder{
     height: 100%;  
     width: 45%; 
     box-shadow: 1px 1px 3px 4px #ccc;    
+}
 
+@media(max-width: 900px){
+    .contact-image{
+        display: none;
+    }
 }
 
 form h2{
     font-size: 34px; 
-    
 }
 
 form button{
