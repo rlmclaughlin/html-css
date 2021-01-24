@@ -50,10 +50,15 @@ nav section{
     width: 65%; 
 }
 
+@media (max-width: 810px){
+    nav section{
+        padding-bottom:3px; 
+    }
+}
+
 @media (max-width: 530px){
     nav section{
         width: 100%;
-        padding-bottom:2px; 
     }
 }
 
@@ -168,8 +173,14 @@ header section{
     flex-wrap: wrap; 
     justify-content: space-between;
     width: 75%;
-    height: 90%;
+    height: 85%;
     margin: 20px auto; 
+}
+
+@media(max-width: 1125px){
+    .gallery-container{
+        height: 70%;
+    }
 }
 
 @media(max-width: 999px){
@@ -206,8 +217,9 @@ header section{
     width: 24%; 
     max-height: 220px; 
     position: relative; 
+    background: #ffffffa6;
     margin: 0px 0px;
-    box-shadow: 1px 1px 3px 4px #ccc;    
+    box-shadow: 0 4px 5px rgba(0,0,0,.6);    
 }
 
 @media(max-width: 1125px){
@@ -314,7 +326,7 @@ footer section{
 @media(max-width: 600px){
     footer section{
         width: 85%;
-        margin: 0 auto;
+        margin: 20px auto 0px auto;
     }
 }
 
