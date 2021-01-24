@@ -65,6 +65,7 @@ nav section a{
 nav section a:hover{
     font-size: 18px; 
     text-decoration: underline;
+    transition: .3s;
 }
 
 nav section a h1{
@@ -532,18 +533,17 @@ main section p{
 
 .record-image2{
     width: 100%;
-    max-width: 320px;
+    max-width: 230px;
     height: 100%; 
     max-height: 320px;
     float: left;
     box-shadow: 1px 1px 3px 4px #454851;    
-    margin: 10px 45px 10px 0px;
+    margin: 10px 40px 10px 0px;
     opacity: 0.9;
 }
 
 @media(max-width: 730px){
     .record-image2{
-        max-width: 500px;
         margin: 0 auto 15px auto; 
         float: none;
         height: auto;
@@ -606,27 +606,33 @@ aside{
 
 .contact-container{
     width: 75%; 
-    height:44%;
+    height:50%;
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-around;
     color: #36383b;
 }
 
+
+
 @media(max-width: 900px){
     .contact-container{
+        justify-content: center;
+        height:55%;
         width: 85%;
     }
 }
 
-@media(max-width: 750px){
+@media(max-width: 600px){
     .contact-container{
-        justify-content: center;
+        height: 55%;
+        padding-top: 15px; 
+        padding-bottom: 15px;
     }
 }
 
 form{
-    width: 40%; 
+    width: 43%; 
     text-align: center;
     padding: 15px 0px; 
     box-shadow: 1px 1px 3px 4px #ccc;
@@ -638,9 +644,9 @@ form{
     }
 }
 
-@media(max-width: 650px){
+@media(max-width: 755px){
     form{
-        width: 65%;
+        width: 70%;
     }
 }
 
@@ -657,7 +663,7 @@ form{
 }
 
 form h3{
-    margin-top: 0px;
+    margin: 5px auto 25px auto;
     text-decoration: underline;
 }
 
@@ -730,8 +736,11 @@ form button{
     width: 78%; 
     background: transparent; 
     border-radius: 5px; 
-    height: 25px; 
-    border: 2px solid #ccc;
+    height: 35px; 
+    margin-top: 15px;
+    border: 3px solid #8aff74;
     font-weight:bold;
-    color: #36383b;
+    color: #23270e;
+    background: #78b7cc;
+
 }
