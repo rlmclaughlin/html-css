@@ -168,7 +168,7 @@ header section{
     flex-wrap: wrap; 
     justify-content: space-between;
     width: 75%;
-    height: 75%;
+    height: 90%;
     margin: 20px auto; 
 }
 
@@ -578,7 +578,6 @@ main section p{
     }    
 }
 
-
 aside{
     display: flex; 
     flex-wrap: wrap; 
@@ -595,47 +594,45 @@ aside{
     }    
 }
 
-
-
 .aside ul{
     width: 40%;
     padding: 0px;
 }
-/*---------------------------------------contact me------------------------------*/
 
+/*---------------------------------------contact me------------------------------*/
 
 .contact-container{
     width: 75%; 
-    height:50%;
     display: flex;
     flex-wrap: wrap; 
-    justify-content: space-around;
+    justify-content: center;
     color: #36383b;
 }
-
-
 
 @media(max-width: 900px){
     .contact-container{
         justify-content: center;
-        height:55%;
         width: 85%;
     }
 }
 
 @media(max-width: 600px){
     .contact-container{
-        height: 55%;
         padding-top: 15px; 
         padding-bottom: 15px;
+        height: auto;
     }
 }
 
 form{
-    width: 43%; 
+    width: 45%; 
     text-align: center;
-    padding: 15px 0px; 
-    box-shadow: 1px 1px 3px 4px #ccc;
+    padding: 15px 0px 5px 0px; 
+    box-shadow: 1px 1px 3px 4px #63646a5e;
+    background: rgb(252, 249, 249);
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    height:100%;
+    border-radius: 5px;
 }
 
 @media(max-width: 900px){
@@ -653,6 +650,7 @@ form{
 @media(max-width: 500px){
     form{
         width: 90%;
+        height: auto; 
     }
 }
 
@@ -665,6 +663,8 @@ form{
 form h3{
     margin: 5px auto 25px auto;
     text-decoration: underline;
+    color: rgb(70 73 82);
+    font-weight: 600; 
 }
 
 .form-name{
@@ -676,7 +676,7 @@ form h3{
 }
 
 .form-name input{
-    width: 44%; 
+    width: 100%; 
 }
 
 input{
@@ -684,10 +684,11 @@ input{
     margin-bottom: 15px; 
     font-size: 13px; 
     border-top: none;
-    border-right: none;
-    border-left: none; 
-    border-bottom-color: #ccc;
-    background: #ebebeb
+    border: none;
+    padding: 5px; 
+    border-radius: 5px;
+    background: #e2e2e2;
+    color: rgb(70 73 82);;
 }
 
 @media(max-width: 730px){
@@ -698,13 +699,18 @@ input{
 
 input::placeholder{
     margin: 0 auto; 
+    color: rgb(116, 116, 116);
+    font-weight: bold;
 }
 
 textarea{
     width: 75%; 
-    height: 35%;
-    border-color: #ccc;
-    background: #ebebeb;
+    height: 75px;
+    border-radius: 5px;
+    border: none;
+    background: #e2e2e2;
+    color: rgb(70 73 82);
+    font-family: 'EB Garamond', serif;
 }
 
 textarea:focus, input:focus{
@@ -713,13 +719,16 @@ textarea:focus, input:focus{
 
 textarea::placeholder{
     text-align: center; 
-    padding:15%;
+    padding:12%;
+    color: rgb(116, 116, 116);
+    font-weight: 800;
+    font-family: 'EB Garamond', serif
 }
 
 .contact-image{
-    height: 100%;  
-    width: 45%; 
-    box-shadow: 1px 1px 3px 4px #ccc;    
+    height: auto;  
+    width: 55%; 
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
 }
 
 @media(max-width: 900px){
@@ -729,7 +738,7 @@ textarea::placeholder{
 }
 
 form h2{
-    font-size: 34px; 
+    font-size: 34px;  
 }
 
 form button{
@@ -737,10 +746,30 @@ form button{
     background: transparent; 
     border-radius: 5px; 
     height: 35px; 
-    margin-top: 15px;
-    border: 3px solid #8aff74;
+    margin-top: 10px;
+    border: 3px solid #078a18b2;
     font-weight:bold;
-    color: #23270e;
-    background: #78b7cc;
-
+    color:#ffffff;
+    background: #019cb2;
 }
+
+form button:hover{
+    background: white;
+    color: #019cb2;
+    border: 3px solid #019cb2;
+}
+
+.contact-icons{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-evenly; 
+    width: 100%; 
+    padding: 7px;
+}
+
+.trademark{
+    width: 100%;
+    text-align: center;
+    color: #494d56;
+    margin-bottom: 0px;
+}    
