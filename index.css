@@ -50,10 +50,15 @@ nav section{
     width: 65%; 
 }
 
+@media (max-width: 810px){
+    nav section{
+        padding-bottom:3px; 
+    }
+}
+
 @media (max-width: 530px){
     nav section{
         width: 100%;
-        padding-bottom:2px; 
     }
 }
 
@@ -168,8 +173,16 @@ header section{
     flex-wrap: wrap; 
     justify-content: space-between;
     width: 75%;
-    height: 90%;
+    height: 85%;
     margin: 20px auto; 
+    background: transparent;
+    box-shadow: none;
+}
+
+@media(max-width: 1125px){
+    .gallery-container{
+        height: 70%;
+    }
 }
 
 @media(max-width: 999px){
@@ -194,7 +207,7 @@ header section{
 @media(max-width: 500px){
     .gallery-container{
         height: 100%;
-        margin-top: 10px;
+        margin-top: 5px;
     }
 }
 
@@ -206,8 +219,9 @@ header section{
     width: 24%; 
     max-height: 220px; 
     position: relative; 
+    background: #ffffffa6;
     margin: 0px 0px;
-    box-shadow: 1px 1px 3px 4px #ccc;    
+    box-shadow: 0 4px 15px rgba(0,0,0,.6);    
 }
 
 @media(max-width: 1125px){
@@ -272,7 +286,7 @@ header section{
 }
 
 .gallery-card h3:hover{
-    background: rgba(98, 101, 110, 0.3); 
+    background: rgba(0, 0, 0, 0.61); 
     color: white; 
     display: flex; 
     flex-wrap: wrap; 
@@ -314,7 +328,7 @@ footer section{
 @media(max-width: 600px){
     footer section{
         width: 85%;
-        margin: 0 auto;
+        margin: 20px auto 0px auto;
     }
 }
 
@@ -394,6 +408,12 @@ footer img{
 @media(max-width: 900px){
     .bio-banner{
         width: 95%;
+    }
+}
+
+@media(max-width: 500px){
+    .bio-banner{
+        margin-top: 5px;
     }
 }
 
@@ -607,6 +627,8 @@ aside{
     flex-wrap: wrap; 
     justify-content: center;
     color: #36383b;
+    background: transparent; 
+    box-shadow: none;
 }
 
 @media(max-width: 900px){
@@ -630,7 +652,7 @@ form{
     padding: 15px 0px 5px 0px; 
     box-shadow: 1px 1px 3px 4px #63646a5e;
     background: rgb(252, 249, 249);
-    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    box-shadow: 0 5px 25px rgba(0,0,0,.6);
     height:100%;
     border-radius: 5px;
 }
@@ -728,7 +750,7 @@ textarea::placeholder{
 .contact-image{
     height: auto;  
     width: 55%; 
-    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    box-shadow: 0 5px 25px rgba(0,0,0,.6);
 }
 
 @media(max-width: 900px){
